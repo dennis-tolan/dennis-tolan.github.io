@@ -1,0 +1,19 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+* { 
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	    margin: 50px auto 20px; /* moves header below menu + centers + adds margin before 'Jumbotron' */
+	 max-width: 1440px;
+	background: url('http://placehold.it/1440x800') no-repeat center / 100%;
+}
+
+#hero-text {
+	text-align: center;
+	   padding: 15% 0;
+	     color: red;
+}
+
+
