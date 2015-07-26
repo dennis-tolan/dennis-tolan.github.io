@@ -1,0 +1,67 @@
+* { 
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, .nav > li> a, .navbar-brand { font-family: 'Montserrat', sans-serif; }
+
+h1 { color: #333; text-transform: uppercase; }
+
+h2 { color: #3399cc; text-transform: uppercase; }
+
+a { color: #3399cc; }
+
+a:hover { color: #333; }
+
+.progress-bar {
+	background: none;
+	background-color: #3399cc;
+}
+
+header {
+	    margin: 0 auto;
+	 max-width: 1440px;
+	 background-color: #ddd;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.hero { padding: 0; }
+
+.hero-text {
+	text-align: center;
+	   padding: 15% 0;
+	     color: #ddd;
+	     background-color: rgba(0,0,0,0.5);
+}
+
+.navbar-default {
+	background: none;
+	border: none;
+}
+
+.navbar-brand { padding: 30px; }
+
+.navbar { margin-bottom: 0; }
+
+.nav > li> a { padding: 2em; }
+
+.navbar-default .navbar-nav>li>a, .navbar-brand { color: #333; text-transform: uppercase;}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover { color: #3399cc;}
+
+.navbar-toggle { padding: 12px 10px; }
+
+.page-headline {
+	font-size: 80px;
+	color: #fff;
+}
+
+.work-thumbs { margin-top: 4em; margin-bottom: 4em; }
+
+@media (max-width: 768px) {
+	.page-headline{ font-size: 40px; }
+	
+}
+
+footer{ margin-top: 2em; border-top: 1px solid #eee; padding: 2em 0; }
