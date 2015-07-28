@@ -23,7 +23,9 @@ a { color: #3399cc; }
 
 a:hover { color: #333; }
 
-.skill-section { padding: 20px 0; }
+.skill-section { padding: 20px 0; } 
+
+.black { color: #333; }
 
 header {
 	    margin: 0 auto;
@@ -86,7 +88,18 @@ img.tool-icon-2x { /* use @extend in SASS */
 
 .project-showcase img { margin: 20px 0; }
 
-.work-thumbs { margin-top: 60px; margin-bottom: 30px; }
+/* Work Section */
+
+a.work-thumbs { display: block; position: relative; margin: 60px 0 20px; }
+
+a.work-thumbs:hover .work-thumb__overlay { display: block; }
+
+.work-thumb__overlay { display: none; position: absolute; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); }
+
+.work-thumb__overlay > span { position: absolute; width: 100%; top: 50%; -webkit-transform: translate(0px, -50%); -ms-transform: translate(0px, -50%); transform: translate(0px, -50%); color: #fff; font-size: 24px; font-family: 'Montserrat', sans-serif; text-transform: uppercase; }
+
+.work-thumb__overlay > span.glyphicon { font-size: 120px; }
+/* end */
 
 @media (max-width: 768px) {
 	.page-headline{ font-size: 40px; }
