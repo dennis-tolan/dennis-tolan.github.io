@@ -7364,9 +7364,6 @@ a.work-thumbs {
 a.work-thumbs:hover .work-thumb__overlay {
   display: block; }
 
-@media screen and (max-width: 720px) {
-  a.work-thumbs:hover .work-thumb__overlay {
-    display: none; } }
 .work-thumb__overlay {
   display: none;
   position: absolute;
