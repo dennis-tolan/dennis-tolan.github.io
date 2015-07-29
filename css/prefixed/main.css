@@ -17,6 +17,9 @@ a {
 a:hover {
   color: #333; }
 
+a.back {
+  margin: 30px 0; }
+
 .black {
   color: #333; }
 
@@ -100,6 +103,9 @@ a.work-thumbs {
 a.work-thumbs:hover .work-thumb__overlay {
   display: block; }
 
+@media screen and (max-width: 720px) {
+  a.work-thumbs:hover .work-thumb__overlay {
+    display: none; } }
 .work-thumb__overlay {
   display: none;
   position: absolute;
@@ -121,4 +127,4 @@ a.work-thumbs:hover .work-thumb__overlay {
     font-size: 120px; }
 
 .project-showcase img {
-  margin: 20px 0; }
+  margin: 30px 0; }
