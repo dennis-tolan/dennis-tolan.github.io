@@ -8364,10 +8364,55 @@ button.close {
 .fa-medium:before {
   content: "\f23a"; }
 
+* {
+  font-family: "Source Sans Pro", sans-serif; }
+
+body {
+  background: #f1f1f1; }
+
+p {
+  font-size: 16px; }
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase; }
+
+h2 {
+  color: #3399cc; }
+
+a {
+  color: #3399cc; }
+  a:hover {
+    color: #333; }
+  a.back {
+    font-size: 16px;
+    display: block;
+    margin: 30px 0; }
+
+hr {
+  border-top: 1px solid #ddd; }
+
+.black {
+  color: #333; }
+
+.caption {
+  font-size: 85%;
+  font-style: italic;
+  margin-left: 10px;
+  color: #555; }
+
 .navbar-brand {
   padding: 0;
   height: 80px; }
+  .navbar-brand img {
+    height: 30px;
+    margin: 25px 0 0 15px; }
 
+@media (max-width: 420px) {
+  .navbar-brand img {
+    width: 220px;
+    height: auto;
+    margin-top: 30px; } }
 .navbar-default {
   background: none;
   border: none; }
@@ -8419,6 +8464,8 @@ footer {
   footer .footer-text {
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase; }
+  footer a.back {
+    margin: 0; }
 
 .skill-section {
   background-color: #fff;
@@ -8588,51 +8635,11 @@ a.work-thumbs {
 
 .project-showcase-meta {
   background-color: #fff;
+  margin-top: 40px;
   padding: 20px;
-  margin: 20px auto;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
-  max-width: 960px;
   text-align: center; }
 
 .project-showcase img {
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05); }
-
-* {
-  font-family: "Source Sans Pro", sans-serif; }
-
-body {
-  background: #f1f1f1; }
-
-p {
-  font-size: 16px; }
-
-h1, h2 {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase; }
-
-h2 {
-  color: #3399cc; }
-
-a {
-  color: #3399cc; }
-  a:hover {
-    color: #333; }
-
-a.back {
-  font-size: 16px;
-  display: block;
-  margin: 30px 0; }
-  a.back:hover {
-    text-decoration: none; }
-
-hr {
-  border-top: 1px solid #ddd; }
-
-.black {
-  color: #333; }
-
-.caption {
-  font-size: 85%;
-  font-style: italic;
-  margin-left: 10px;
-  color: #555; }
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
+  margin-top: 40px; }
