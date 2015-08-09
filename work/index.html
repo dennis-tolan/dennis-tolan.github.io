@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<!-- <link rel="stylesheet" href="http://dennis-tolan.github.io/css/build/global.css"> -->
 	<link rel="stylesheet" href="/assets/css/build/global.css">
 
@@ -26,7 +26,7 @@
 	<body>
 
 	<nav class="navbar navbar-default" role="navigation">
-	<div class="container">  
+	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse" aria-expanded="false">
 				<span class="sr-only">Toggle Navigation</span>
@@ -34,9 +34,11 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a href="/" class="navbar-brand">Dennis Tolan</a>
+			<a href="/" class="navbar-brand">
+				<img src="/assets/images/logo.png" style="margin-top:25px; margin-left: 15px; height:30px" alt="">
+			</a>
 		</div>
-		
+
 		<div class="collapse navbar-collapse" id="main-navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="/about/">About</a></li>
@@ -47,7 +49,9 @@
 	</div>
 </nav>
 
-	<header style="background-image: url('/assets/images/work_header.jpg')">
+
+	<!-- <header style="background-image: url('/assets/images/')"> -->
+<header style="background: #3399cc">
 	<div class="container-fluid hero">
 		<div class="hero-text">
 			<h1 class="page-headline">Work</h1>
@@ -55,53 +59,264 @@
 	</div>
 </header>
 
-	<div class="container">
 
-		
-			
-			<div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0">
-				<a href="web-design/" class="center-block work-thumbs" style="background-image: url('http://placeimg.com/720/480/any')">
-					<div class="center-block work-thumb__overlay">
-						<span class="center-block text-center">Web Design</span>
-					</div>
+	<div class="container work-page">
 
-					<img src="http://placeimg.com/720/480/any" class="img-responsive" alt="Web Design thumbnail" style="visibility:hidden;">
-				</a>
+	<div class="work-filter-container">
 
-				<h2 class="hidden-md hidden-lg text-center black">Web Design</h2>
-			</div>
+		<div class="work-filter-item">
+			<a class="filter active">View All</a>
+			<div class="selected"></div>
+		</div>
 
-		
-			
-			<div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0">
-				<a href="graphic-design/" class="center-block work-thumbs" style="background-image: url('graphic-design/building-strong/images/building-strong-logo-02.png')">
-					<div class="center-block work-thumb__overlay">
-						<span class="center-block text-center">Graphic Design</span>
-					</div>
+		<div class="work-filter-item">
+			<a class="filter" data-filter="web">Web Design</a>
+			<div class="selected"></div>
+		</div>
 
-					<img src="graphic-design/building-strong/images/building-strong-logo-02.png" class="img-responsive" alt="Graphic Design thumbnail" style="visibility:hidden;">
-				</a>
+		<div class="work-filter-item">
+			<a class="filter" data-filter="graphic">Graphic Design</a>
+			<div class="selected"></div>
+		</div>
 
-				<h2 class="hidden-md hidden-lg text-center black">Graphic Design</h2>
-			</div>
+		<div class="work-filter-item">
+			<a class="filter" data-filter="print">Print Design</a>
+			<div class="selected"></div>
+		</div>
 
-		
-			
-			<div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0">
-				<a href="print-design/" class="center-block work-thumbs" style="background-image: url('print-design/amrmi-print-ad/images/amrmi-print-ad_mockup.jpg')">
-					<div class="center-block work-thumb__overlay">
-						<span class="center-block text-center">Print Design</span>
-					</div>
+    </div>
 
-					<img src="print-design/amrmi-print-ad/images/amrmi-print-ad_mockup.jpg" class="img-responsive" alt="Print Design thumbnail" style="visibility:hidden;">
-				</a>
+    
 
-				<h2 class="hidden-md hidden-lg text-center black">Print Design</h2>
-			</div>
+        <div class="col-sm-6 col-md-4 thumb-container" data-value="web">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="web-design/sucur-email/" class="work-thumbs" style="background-image: url('web-design/sucur-email/images/amrmi-sucur-offer.png')">
+                    <div class="center-block work-thumb__overlay">
+                        <span class="center-block text-center"><i class="fa fa-share-square-o fa-5x"></i></span>
+                    </div>
 
-		
+                    <img src="web-design/sucur-email/images/amrmi-sucur-offer.png" class="img-responsive" alt="Promotional Email - Sunscape Curaçao thumbnail" style="visibility:hidden;">
+                </a>
+                </div>
+                <div class="panel-footer">Promotional Email - Sunscape Curaçao</div>
+            </div>
+        </div>
+
+    
+
+        <div class="col-sm-6 col-md-4 thumb-container" data-value="web">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="web-design/amrmi-site/" class="work-thumbs" style="background-image: url('web-design/amrmi-site/images/*.jpg')">
+                    <div class="center-block work-thumb__overlay">
+                        <span class="center-block text-center"><i class="fa fa-share-square-o fa-5x"></i></span>
+                    </div>
+
+                    <img src="web-design/amrmi-site/images/*.jpg" class="img-responsive" alt="AMResorts Meetings & Incentives Website thumbnail" style="visibility:hidden;">
+                </a>
+                </div>
+                <div class="panel-footer">AMResorts Meetings & Incentives Website</div>
+            </div>
+        </div>
+
+    
+
+        <div class="col-sm-6 col-md-4 thumb-container" data-value="web">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="web-design/amr-mediasite/" class="work-thumbs" style="background-image: url('web-design/amr-mediasite/images/*.jpg')">
+                    <div class="center-block work-thumb__overlay">
+                        <span class="center-block text-center"><i class="fa fa-share-square-o fa-5x"></i></span>
+                    </div>
+
+                    <img src="web-design/amr-mediasite/images/*.jpg" class="img-responsive" alt="AMResorts Media Download Site thumbnail" style="visibility:hidden;">
+                </a>
+                </div>
+                <div class="panel-footer">AMResorts Media Download Site</div>
+            </div>
+        </div>
+
+    
+
+	
+
+        <div class="col-sm-6 col-md-4 thumb-container" data-value="graphic">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="graphic-design/pulse/" class="work-thumbs" style="background-image: url('graphic-design/pulse/images/pulse-logo-01.png')">
+                    <div class="center-block work-thumb__overlay">
+                        <span class="center-block text-center"><i class="fa fa-share-square-o fa-5x"></i></span>
+                    </div>
+
+                    <img src="graphic-design/pulse/images/pulse-logo-01.png" class="img-responsive" alt="Pulse Lounge thumbnail" style="visibility:hidden;">
+                </a>
+                </div>
+                <div class="panel-footer">Pulse Lounge</div>
+            </div>
+        </div>
+
+    
+
+        <div class="col-sm-6 col-md-4 thumb-container" data-value="graphic">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="graphic-design/building-strong/" class="work-thumbs" style="background-image: url('graphic-design/building-strong/images/building-strong-logo-02.png')">
+                    <div class="center-block work-thumb__overlay">
+                        <span class="center-block text-center"><i class="fa fa-share-square-o fa-5x"></i></span>
+                    </div>
+
+                    <img src="graphic-design/building-strong/images/building-strong-logo-02.png" class="img-responsive" alt="Building Strong v1 thumbnail" style="visibility:hidden;">
+                </a>
+                </div>
+                <div class="panel-footer">Building Strong v1</div>
+            </div>
+        </div>
+
+    
+
+        <div class="col-sm-6 col-md-4 thumb-container" data-value="graphic">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="graphic-design/building-strong/" class="work-thumbs" style="background-image: url('graphic-design/building-strong/images/building-strong-logo-01.png')">
+                    <div class="center-block work-thumb__overlay">
+                        <span class="center-block text-center"><i class="fa fa-share-square-o fa-5x"></i></span>
+                    </div>
+
+                    <img src="graphic-design/building-strong/images/building-strong-logo-01.png" class="img-responsive" alt="Building Strong v2 thumbnail" style="visibility:hidden;">
+                </a>
+                </div>
+                <div class="panel-footer">Building Strong v2</div>
+            </div>
+        </div>
+
+    
+
+        <div class="col-sm-6 col-md-4 thumb-container" data-value="graphic">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="graphic-design/unlimited-referrals/" class="work-thumbs" style="background-image: url('graphic-design/unlimited-referrals/images/unlimited-referrals-logo-01.png')">
+                    <div class="center-block work-thumb__overlay">
+                        <span class="center-block text-center"><i class="fa fa-share-square-o fa-5x"></i></span>
+                    </div>
+
+                    <img src="graphic-design/unlimited-referrals/images/unlimited-referrals-logo-01.png" class="img-responsive" alt="Unlimited Referrals thumbnail" style="visibility:hidden;">
+                </a>
+                </div>
+                <div class="panel-footer">Unlimited Referrals</div>
+            </div>
+        </div>
+
+    
+
+        <div class="col-sm-6 col-md-4 thumb-container" data-value="graphic">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="graphic-design/secrets-society/" class="work-thumbs" style="background-image: url('graphic-design/secrets-society/images/secrets-society-logo-01.png')">
+                    <div class="center-block work-thumb__overlay">
+                        <span class="center-block text-center"><i class="fa fa-share-square-o fa-5x"></i></span>
+                    </div>
+
+                    <img src="graphic-design/secrets-society/images/secrets-society-logo-01.png" class="img-responsive" alt="Secrets Society thumbnail" style="visibility:hidden;">
+                </a>
+                </div>
+                <div class="panel-footer">Secrets Society</div>
+            </div>
+        </div>
+
+    
+
+        <div class="col-sm-6 col-md-4 thumb-container" data-value="graphic">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="graphic-design/one-love/" class="work-thumbs" style="background-image: url('graphic-design/one-love/images/one-love-logo-01.png')">
+                    <div class="center-block work-thumb__overlay">
+                        <span class="center-block text-center"><i class="fa fa-share-square-o fa-5x"></i></span>
+                    </div>
+
+                    <img src="graphic-design/one-love/images/one-love-logo-01.png" class="img-responsive" alt="One Love thumbnail" style="visibility:hidden;">
+                </a>
+                </div>
+                <div class="panel-footer">One Love</div>
+            </div>
+        </div>
+
+    
+
+        <div class="col-sm-6 col-md-4 thumb-container" data-value="graphic">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="graphic-design/oktoberfest/" class="work-thumbs" style="background-image: url('graphic-design/oktoberfest/images/oktoberfest-logo-01.png')">
+                    <div class="center-block work-thumb__overlay">
+                        <span class="center-block text-center"><i class="fa fa-share-square-o fa-5x"></i></span>
+                    </div>
+
+                    <img src="graphic-design/oktoberfest/images/oktoberfest-logo-01.png" class="img-responsive" alt="Oktoberfest thumbnail" style="visibility:hidden;">
+                </a>
+                </div>
+                <div class="panel-footer">Oktoberfest</div>
+            </div>
+        </div>
+
+    
+
+        <div class="col-sm-6 col-md-4 thumb-container" data-value="graphic">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="graphic-design/xhale-club/" class="work-thumbs" style="background-image: url('graphic-design/xhale-club/images/xhale-club-logo-01.png')">
+                    <div class="center-block work-thumb__overlay">
+                        <span class="center-block text-center"><i class="fa fa-share-square-o fa-5x"></i></span>
+                    </div>
+
+                    <img src="graphic-design/xhale-club/images/xhale-club-logo-01.png" class="img-responsive" alt="xhale club thumbnail" style="visibility:hidden;">
+                </a>
+                </div>
+                <div class="panel-footer">xhale club</div>
+            </div>
+        </div>
+
+    
+
+    
+
+        <div class="col-sm-6 col-md-4 thumb-container" data-value="print">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="print-design/amrmi-golf-ad/" class="work-thumbs" style="background-image: url('print-design/amrmi-golf-ad/images/amrmi-golf-ad_mockup.jpg')">
+                    <div class="center-block work-thumb__overlay">
+                        <span class="center-block text-center"><i class="fa fa-share-square-o fa-5x"></i></span>
+                    </div>
+
+                    <img src="print-design/amrmi-golf-ad/images/amrmi-golf-ad_mockup.jpg" class="img-responsive" alt="AMResorts Meetings & Incentives thumbnail" style="visibility:hidden;">
+                </a>
+                </div>
+                <div class="panel-footer">AMResorts Meetings & Incentives</div>
+            </div>
+        </div>
+
+    
+
+        <div class="col-sm-6 col-md-4 thumb-container" data-value="print">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="print-design/amrmi-print-ad/" class="work-thumbs" style="background-image: url('print-design/amrmi-print-ad/images/amrmi-print-ad_mockup.jpg')">
+                    <div class="center-block work-thumb__overlay">
+                        <span class="center-block text-center"><i class="fa fa-share-square-o fa-5x"></i></span>
+                    </div>
+
+                    <img src="print-design/amrmi-print-ad/images/amrmi-print-ad_mockup.jpg" class="img-responsive" alt="AMResorts Meetings & Incentives thumbnail" style="visibility:hidden;">
+                </a>
+                </div>
+                <div class="panel-footer">AMResorts Meetings & Incentives</div>
+            </div>
+        </div>
+
+    
+  	
+  </div>
 
 </div>
+
 
 	<footer>
 	<div class="container">

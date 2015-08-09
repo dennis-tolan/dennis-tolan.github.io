@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<!-- <link rel="stylesheet" href="http://dennis-tolan.github.io/css/build/global.css"> -->
 	<link rel="stylesheet" href="/assets/css/build/global.css">
 
@@ -26,7 +26,7 @@
 	<body>
 
 	<nav class="navbar navbar-default" role="navigation">
-	<div class="container">  
+	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse" aria-expanded="false">
 				<span class="sr-only">Toggle Navigation</span>
@@ -34,9 +34,11 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a href="/" class="navbar-brand">Dennis Tolan</a>
+			<a href="/" class="navbar-brand">
+				<img src="/assets/images/logo.png" style="margin-top:25px; margin-left: 15px; height:30px" alt="">
+			</a>
 		</div>
-		
+
 		<div class="collapse navbar-collapse" id="main-navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="/about/">About</a></li>
@@ -47,7 +49,9 @@
 	</div>
 </nav>
 
-	<header style="background-image: url('/assets/images//assets/images/contact_header.jpg')">
+
+	<!-- <header style="background-image: url('/assets/images/concrete.jpg')"> -->
+<header style="background: #3399cc">
 	<div class="container-fluid hero">
 		<div class="hero-text">
 			<h1 class="page-headline">Contact</h1>
@@ -55,34 +59,47 @@
 	</div>
 </header>
 
-	<div class="container">
-	<div class="row">
-		<div class="col-sm-8 col-sm-offset-2">
-			<form action="//formspree.io/dennis.tolan@gmail.com"
-				  method="POST">
-				
-				<div class="col-sm-12 col-md-6">
-					<label for="name">Your Name</label>
-					<input type="text" name="name">
-				</div>
 
-				<div class="col-sm-12 col-md-6">
-					<label for="name">Your Email</label>
-					<input type="email" name="_replyto">
-				</div>
-				
-				<div class="col-sm-12">
-					<label for="message">Message</label>
-					<textarea name="message" id="message-area" cols="30" rows="10"></textarea>
-				</div>
-
-				<div class="col-sm-12 col-sm-offset-0 col-md-6 col-md-offset-3">
-					<input type="submit" value="Send">
-				</div>
-			</form>
+	<div class="container pg-contact">
+	<section class="contact-section">
+		<div class="row">
+			<div class="col-sm-12 col-sm-offset-0 col-md-6 col-md-offset-3 text-center">
+				<h1>Dennis Tolan</h1>
+				<h3><a href="mailto:dennis.tolan@gmail.com">dennis.tolan@gmail.com</a></h3>
+			</div>
 		</div>
-	</div>
+
+		<hr>
+
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<form action="//formspree.io/dennis.tolan@gmail.com"
+					  method="POST">
+
+					<div class="col-sm-12 col-md-6">
+						<label for="name">Your Name</label>
+						<input type="text" name="name">
+					</div>
+
+					<div class="col-sm-12 col-md-6">
+						<label for="name">Your Email</label>
+						<input type="email" name="_replyto">
+					</div>
+
+					<div class="col-sm-12">
+						<label for="message">Message</label>
+						<textarea name="message" id="message-area" cols="30" rows="10"></textarea>
+					</div>
+
+					<div class="col-sm-12 col-sm-offset-0 col-md-6 col-md-offset-3">
+						<input type="submit" value="Send">
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
 </div>
+
 
 	<footer>
 	<div class="container">
