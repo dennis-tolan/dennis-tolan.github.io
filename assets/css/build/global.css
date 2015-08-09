@@ -8543,7 +8543,7 @@ img.tool-icon-2x {
             transform: scale(0);
     visibility: collapse;
     position: absolute;
-    top: -10000px; }
+   }
 
 .panel {
   border-radius: 0; }
