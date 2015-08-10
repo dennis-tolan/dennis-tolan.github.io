@@ -8439,26 +8439,18 @@ hr {
 
 header {
   margin: 0 auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  background-attachment: fixed; }
+  background-color: #3399cc; }
 
 .hero {
   padding: 0; }
+  .hero .hero-text {
+    text-align: center;
+    padding: 5% 40px;
+    color: #fff; }
+    .hero .hero-text .page-headline {
+      font-size: 80px;
+      color: #fff; }
 
-.hero-text {
-  text-align: center;
-  padding: 10% 40px;
-  color: #fff; }
-
-.page-headline {
-  font-size: 80px;
-  color: #fff; }
-
-@media (max-width: 768px) {
-  .page-headline {
-    font-size: 40px; } }
 footer {
   border-top: 1px solid #ddd;
   padding: 30px 0;
@@ -8497,7 +8489,7 @@ img.tool-icon-2x {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin: 30px auto; }
+  margin: 10px auto 30px; }
   .work-filter-container .work-filter-item {
     cursor: pointer;
     position: relative; }
@@ -8542,8 +8534,7 @@ img.tool-icon-2x {
         -ms-transform: scale(0);
             transform: scale(0);
     visibility: collapse;
-    position: absolute;
-   }
+    position: absolute; }
 
 .panel {
   border-radius: 0; }
@@ -8572,7 +8563,7 @@ a.work-thumbs {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
