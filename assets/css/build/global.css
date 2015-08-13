@@ -8377,9 +8377,6 @@ h1, h2 {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase; }
 
-h2 {
-  color: #3399cc; }
-
 a {
   color: #3399cc; }
   a:hover {
@@ -8399,7 +8396,7 @@ hr {
   font-size: 85%;
   font-style: italic;
   margin-left: 10px;
-  color: #555; }
+  color: #777; }
 
 .navbar-brand {
   padding: 0;
@@ -8463,20 +8460,53 @@ footer {
 
 .skill-section {
   background-color: #fff;
-  margin: 40px auto;
+  margin: 20px auto;
   padding: 20px 30px 40px;
   max-width: 960px;
   border: 1px solid #ddd;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05); }
+  .skill-section p {
+    color: #777; }
+  .skill-section small {
+    font-style: italic; }
 
 img.tool-icon, img.tool-icon-2x {
   width: 60px;
   max-height: 60px;
   margin: 10px; }
 
+@media (max-width: 340px) {
+  img.tool-icon, img.tool-icon-2x {
+    margin: 5px; } }
 img.tool-icon-2x {
   width: 120px; }
 
+.skill-section#education img {
+  margin-top: 20px; }
+
+.resume-download-btn {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  display: block;
+  padding: 10px 40px;
+  margin: 20px auto;
+  border: 0;
+  border-radius: 3px;
+  background-color: #3399cc;
+  -webkit-transition: all 0.1s ease-out;
+          transition: all 0.1s ease-out; }
+  .resume-download-btn:hover, .resume-download-btn:focus {
+    background-color: #297AA3;
+    outline: none; }
+
+@media (max-width: 400px) {
+  .resume-download-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0; } }
 .work-filter-container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -8521,6 +8551,9 @@ img.tool-icon-2x {
     .work-filter-container .work-filter-item a.filter {
       padding: 10px 0 5px;
       width: 120px; } }
+@media (max-width: 510px) {
+  .work-filter-container .work-filter-item {
+    text-align: center; } }
 .thumb-container {
   opacity: 1;
   -webkit-transform: scale(1);
@@ -8541,11 +8574,15 @@ img.tool-icon-2x {
   .panel:hover {
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25); }
     .panel:hover .panel-footer {
-      color: #3399cc; }
+      color: #333; }
   .panel .panel-body {
     padding: 10px; }
   .panel .panel-footer {
-    font-size: 16px; }
+    color: #777;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
 
 a.work-thumbs {
   display: block;
@@ -8563,7 +8600,7 @@ a.work-thumbs {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
@@ -8587,7 +8624,7 @@ a.work-thumbs {
   background-color: #fff;
   border: 1px solid #ddd;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
-  margin: 40px auto;
+  margin: 20px auto;
   padding: 20px 30px; }
   .contact-section form {
     width: 100%;
@@ -8596,29 +8633,29 @@ a.work-thumbs {
       width: 100%;
       margin-bottom: 30px;
       border: 1px solid #ddd;
-      border-radius: 0;
+      border-radius: 3px;
       box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05) inset;
       padding: 10px;
       font-size: 20px;
-      -webkit-transition: all 0.25s ease-out;
-              transition: all 0.25s ease-out; }
-      .contact-section form input:hover, .contact-section form input:focus, .contact-section form input:active, .contact-section form textarea:hover, .contact-section form textarea:focus, .contact-section form textarea:active {
+      -webkit-transition: all 0.1s linear;
+              transition: all 0.1s linear; }
+      .contact-section form input:hover, .contact-section form input:focus, .contact-section form textarea:hover, .contact-section form textarea:focus {
         border: 1px solid #3399cc;
         outline: none; }
     .contact-section form textarea {
       resize: none; }
     .contact-section form [type="submit"] {
       font-family: "Montserrat", sans-serif;
-      color: #3399cc;
+      color: #fff;
       text-transform: uppercase;
       font-size: 24px;
       padding: 10px 0;
-      border: 1px solid #3399cc;
-      border-radius: 0;
-      background-color: #fff; }
+      border: 0;
+      border-radius: 3px;
+      background-color: #3399cc; }
       .contact-section form [type="submit"]:hover, .contact-section form [type="submit"]:focus {
-        color: #fff;
-        background-color: #3399cc; }
+        background-color: #297AA3;
+        border: 0; }
     .contact-section form label {
       font-family: "Montserrat", sans-serif;
       color: #333;
@@ -8633,7 +8670,20 @@ a.work-thumbs {
   border: 1px solid #ddd;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
   text-align: center; }
+  .project-showcase-meta h1 {
+    font-size: 24px; }
+  .project-showcase-meta span {
+    font-size: 18px;
+    font-style: italic;
+    color: #777; }
+  .project-showcase-meta h2 {
+    font-size: 20px; }
+  .project-showcase-meta p {
+    color: #777; }
 
 .project-showcase img {
+  display: block;
+  max-width: 100%;
+  height: auto;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
-  margin-top: 40px; }
+  margin: 40px auto 20px; }
