@@ -8511,10 +8511,51 @@ header {
 
 footer {
   padding: 30px 0;
-  background-color: white; }
-  footer .footer-text {
-    font-family: "Montserrat Light", sans-serif; }
+  margin-top: 8%;
+  background-color: #4db6ac;
+  color: white;
+  position: relative; }
+  footer img {
+    position: absolute;
+    bottom: 99px;
+    left: 0; }
+  footer ul {
+    margin: 0;
+    padding: 0; }
+    footer ul li {
+      list-style: none;
+      display: inline-block;
+      text-transform: uppercase;
+      padding: 10px; }
+      footer ul li:first-child {
+        padding-left: 0; }
+      footer ul li a {
+        color: white;
+        text-decoration: none; }
+        footer ul li a:hover {
+          color: #333;
+          text-decoration: none; }
+  footer span {
+    display: block;
+    text-align: right;
+    padding: 10px;
+    padding-right: 0; }
 
+@media (max-width: 767px) {
+  footer img {
+    bottom: 139px; }
+  footer ul {
+    text-align: center; }
+  footer span {
+    text-align: center; } }
+@media (max-width: 420px) {
+  footer img {
+    bottom: 139px; }
+  footer ul {
+    text-align: left; }
+  footer span {
+    text-align: left;
+    padding-left: 0; } }
 .skill-section {
   background-color: white;
   margin: 20px auto;
@@ -8604,15 +8645,53 @@ img.tool-icon-2x {
       -webkit-transition: all 0.1s ease-out;
               transition: all 0.1s ease-out; }
 
-@media (max-width: 768px) {
-  .work-filter-container .work-filter-item {
-    text-align: center; }
-    .work-filter-container .work-filter-item a.filter {
-      padding: 10px 0 5px;
-      width: 120px; } }
-@media (max-width: 510px) {
-  .work-filter-container .work-filter-item {
-    text-align: center; } }
+@media (max-width: 767px) {
+  .work-filter-container {
+    width: 100%; }
+    .work-filter-container .work-filter-item {
+      text-align: center;
+      width: 25%; }
+      .work-filter-container .work-filter-item a.filter {
+        padding: 10px 0 5px; } }
+@media (max-width: 520px) {
+  .work-filter-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .work-filter-container .work-filter-item {
+      width: 25%; }
+      .work-filter-container .work-filter-item a.filter {
+        height: 56px;
+        line-height: 1.0;
+        padding-right: 20px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+@media (max-width: 520px) {
+  .work-filter-container .work-filter-item a.filter {
+    padding-right: 10px;
+    padding-left: 10px; } }
 .thumb-container {
   opacity: 1;
   -webkit-transform: scale(1);
@@ -8763,7 +8842,7 @@ a.work-thumbs {
 .toTop {
   width: 60px;
   height: 60px;
-  background-color: #4db6ac;
+  background-color: #5ebdb4;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: -webkit-box;
@@ -8784,11 +8863,12 @@ a.work-thumbs {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  right: 40px;
-  bottom: 60px;
+  right: 5%;
+  bottom: 80px;
   cursor: pointer;
   -webkit-transition: all 0.1s ease-out;
-          transition: all 0.1s ease-out; }
+          transition: all 0.1s ease-out;
+  z-index: 10000; }
   .toTop:hover, .toTop:focus {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     background-color: #45a39a; }
@@ -8796,9 +8876,9 @@ a.work-thumbs {
     color: white;
     padding-bottom: 5px; }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .toTop {
-    right: 20px; } }
-@media (max-width: 320px) {
+    bottom: 40px; } }
+@media (max-width: 420px) {
   .toTop {
-    right: 10px; } }
+    bottom: 5%; } }
