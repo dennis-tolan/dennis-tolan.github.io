@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="/assets/css/app.css">
+	<title>Dennis Tolan | Full Stack Designer</title>
+</head>
+
+	<body>
+		<div class="page-wrapper">
+			<nav class="navbar wrapper" role="navigation">
+	<div class="container">
+		<a href="/" class="navbar-brand">Dennis Tolan<span>Full-Stack Designer</span></a>
+		<a class="toggle">Menu</a>
+		<div class="navbar-group-container is-closed">
+			<ul class="navbar-group">
+				<li class="navbar-item"><a href="/about">About</a></li>
+				<li class="navbar-item"><a href="/work/">Work</a></li>
+				<li class="navbar-item"><a href="/contact/">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+			<div class="work-item-wrapper wrapper">
+	<section class="lead">
+		<div class="container">
+			<div class="lead-wrapper">
+				<h3 class="tag">Email Design + Development</h3>
+				<h1>AMRMI Email Marketing</h1>
+				<p>When I started at AMResorts our emails were completely image based, leading to a poor mobile experience and high bounce rate. Through working with our CRM team and Digital Designer I was able to develop a fully responsive email template for the Meetings & Incentvies segment.</p>
+				<p>Utilizing the web-based tool <a href="">Litmus</a> we were able ensure a enjoyable experience across every device and client imaginable. Litmus also provided us some additional analytics and tracking in addition to the ones we already had.</p>
+			</div>
+		</div>
+	</section>
+	<section class="lead">
+		<div class="container">
+			<h2>Now Onyx Punta Cana - Pre-Opening Offer</h2>
+		</div>
+	</section>
+	<section class="content">
+		<div class="container">
+			<div class="image-wrapper full-width-images">
+				<img class="desktop" src="/assets/images/work/email-marketing/noopc-email.png" alt="">
+				<img class="mobile" src="/assets/images/work/email-marketing/noopc-email-mobile.png" alt="">
+		</div>
+	</section>
+	<section class="lead">
+		<div class="container">
+			<h2>Secrets Capri Riviera Cancun - Limited Time Rate Offer</h2>
+		</div>
+	</section>
+	<section class="content">
+		<div class="container">
+			<div class="image-wrapper full-width-images">
+				<img class="desktop" src="/assets/images/work/email-marketing/secrc-email.png" alt="">
+				<img class="mobile" src="/assets/images/work/email-marketing/secrc-email-mobile.png" alt="">
+		</div>
+	</section>
+	<section class="lead">
+		<div class="container">
+			<h2>Secrets Maroma Beach Riviera Cancun - 8th Anniversary Offer</h2>
+		</div>
+	</section>
+	<section class="content">
+		<div class="container">
+			<div class="image-wrapper full-width-images">
+				<img class="desktop" src="/assets/images/work/email-marketing/semrc-email.png" alt="">
+				<img class="mobile" src="/assets/images/work/email-marketing/semrc-email-mobile.png" alt="">
+		</div>
+	</section>
+</div>
+		</div>
+		<footer class="footer wrapper">
+	<div class="container">
+		<p>Design + Developed by Dennis Tolan &copy; 2016<br>
+		Powered by <a href="">Jekyll</a></p>
+	</div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+	$( '.toggle' ).on( 'click', function() {
+		$( this ).text(function(i, v){
+			return v === 'close' ? 'menu' : 'close'
+		});
+		$( '.navbar-group-container' ).toggleClass('is-closed').animate({
+			height: 'toggle'
+		});
+	});
+</script>
+	</body>
+</html>

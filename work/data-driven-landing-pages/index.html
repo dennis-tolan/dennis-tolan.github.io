@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="/assets/css/app.css">
+	<title>Dennis Tolan | Full Stack Designer</title>
+</head>
+
+	<body>
+		<div class="page-wrapper">
+			<nav class="navbar wrapper" role="navigation">
+	<div class="container">
+		<a href="/" class="navbar-brand">Dennis Tolan<span>Full-Stack Designer</span></a>
+		<a class="toggle">Menu</a>
+		<div class="navbar-group-container is-closed">
+			<ul class="navbar-group">
+				<li class="navbar-item"><a href="/about">About</a></li>
+				<li class="navbar-item"><a href="/work/">Work</a></li>
+				<li class="navbar-item"><a href="/contact/">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+			<div class="work-item-wrapper wrapper">
+	<section class="lead">
+		<div class="container">
+			<div class="lead-wrapper">
+				<h3 class="tag">Design + Front-End Development</h3>
+				<h1>Data-Driven Campaign Landing Pages</h1>
+				<p><em>(In progress)</em> This project has been at the forefront of my thought as of late. As of right now our larger sales are hand coded which creates massive HTML files and stylesheets that have seen better days. All this makes the idea of managing all of the content very overwhelming.</p>
+				<p>Our goal was to attack this in two steps, first we had to establish an improved look and feels, and the second phase was to leverage a data-driven framework to manage all of our content.</p>
+			</div>
+		</div>
+	</section>
+	<section class="lead">
+		<div class="container">
+			<h2>Where we're starting from</h2>
+			<p>The first thing we had to do was refine the look and feel. We did this by taking cues from Material Design and creating our own "cards."  On the left is our first iteration, on the right our refined version that will be the basis our creative moving forward.</p>
+			<p>Our refined version have solid white content areas to help break up the collage of imagery we had on the previous version. We also wanted to incorporte some distinguishing brand colors which I think is more successfully done in our second version.</p>
+			<p>We also move the "brand education" section to the bottom of the page, this way it's there if it's needed but it's not taking a prime peice of real estate.</p>
+		</div>
+	</section>
+	<section class="content">
+		<div class="container">
+			<div class="image-wrapper full-width-images">
+				<img class="half" src="/assets/images/work/data-driven-landing-pages/landing-page-1.png" alt="">
+				<img class="half" src="/assets/images/work/data-driven-landing-pages/landing-page-2.png" alt="">
+		</div>
+	</section>
+	<section class="lead">
+		<div class="container">
+			<h2>Where we're heading</h2>
+			<p>Our next step is what I'm very excited for. We're going to be using AngularJS to manage all of our content and dynamically generate these pages based on our own custom criteria. The two examples above have a smaller number of participant but some of these sales can have up to 60 properties involved. Angular will allow us to incorporte things such as dynamic in page filter and allow us to make global style changes quickly and efficiently</p>
+			<p>Allowing us to house all of that information in a simple JSON file will be a huge burden of our back. Now with our focus less on the maintainance and content management, we'll be able to address the user experience of these pages and build more complelling layouts and interactions.</p>
+			<p>Now that we can house our data in a managable way we can add to it, allowing the consumer to make a more educated decision on the page, without relying on dropping them on a resort homepage and losing them. We're hoping to accomplish this through our expanding cards, which will give the consumer a high level overview of the resort and display some other important information. </p>
+		</div>
+	</section>
+	<section class="content">
+		<div class="container">
+			<div class="image-wrapper full-width-images">
+				<img src="/assets/images/work/data-driven-landing-pages/data-driven-landing-page--expanded.png" alt="">
+		</div>
+	</section>
+	<section class="content">
+		<div class="container">
+			<div class="aside-caption-wrapper">
+				<div class="aside-caption-container">
+					<h2>Resort Cards</h2>
+					<p>This is another example of our expandable resort card. This represents a nights-based offer (stay for 3 get a 4th free), where a rate is not needed.  We can use this as an opportunity to give some more high level information about a particular property.</p>
+				</div>
+			</div>
+			<div class="image-wrapper">
+				<img src="/assets/images/work/data-driven-landing-pages/resort-card-expanded.png" alt="AMResorts Meetings & Incentives - MMIP Ad">
+			</div>
+		</div>
+	</section>
+</div>
+		</div>
+		<footer class="footer wrapper">
+	<div class="container">
+		<p>Design + Developed by Dennis Tolan &copy; 2016<br>
+		Powered by <a href="">Jekyll</a></p>
+	</div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+	$( '.toggle' ).on( 'click', function() {
+		$( this ).text(function(i, v){
+			return v === 'close' ? 'menu' : 'close'
+		});
+		$( '.navbar-group-container' ).toggleClass('is-closed').animate({
+			height: 'toggle'
+		});
+	});
+</script>
+	</body>
+</html>

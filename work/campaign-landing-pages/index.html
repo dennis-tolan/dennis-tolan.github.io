@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="/assets/css/app.css">
+	<title>Dennis Tolan | Full Stack Designer</title>
+</head>
+
+	<body>
+		<div class="page-wrapper">
+			<nav class="navbar wrapper" role="navigation">
+	<div class="container">
+		<a href="/" class="navbar-brand">Dennis Tolan<span>Full-Stack Designer</span></a>
+		<a class="toggle">Menu</a>
+		<div class="navbar-group-container is-closed">
+			<ul class="navbar-group">
+				<li class="navbar-item"><a href="/about">About</a></li>
+				<li class="navbar-item"><a href="/work/">Work</a></li>
+				<li class="navbar-item"><a href="/contact/">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+			<div class="work-item-wrapper wrapper">
+	<section class="lead">
+		<div class="container">
+			<div class="lead-wrapper">
+				<h3 class="tag">Website Design + Front-End Development</h3>
+				<h1>Campaign Landing Pages</h1>
+				<p>The pre-opening campaign landing page was developed with the goal of presenting the consumers with a little bit of information about alot of different aspects of the resort in a central location.</p>
+				<p>I was able to develop a foundation for these pages so that they could be repurposed with only some simple style and content updates. I was able to use variables in SASS to streamline style updates and the CSS property flexbox to create flexable and dynamic layouts.</p>
+				<p>Below are two examples for Dreams Resorts & Spas and Secrets Resorts & Spas respectively.</p>
+			</div>
+		</div>
+	</section>
+	<section class="lead">
+		<div class="container">
+			<h2>Dreams Playa Mujeres - Pre-Opening Campaign</h2>
+			<p><a href="http://www.dreamsresorts.com/playa-mujeres/introducing-dreams-playa-mujeres" target="_blank">Link&nbsp;›</a></p>
+		</div>
+	</section>
+	<section class="content">
+		<div class="container">
+			<div class="image-wrapper full-width-images">
+				<img class="desktop" src="/assets/images/work/campaign-landing-pages/drepm.png" alt="Dreams Playa Mujeres landing page">
+				<img class="mobile" src="/assets/images/work/campaign-landing-pages/drepm--mobile.png" alt="Dreams Playa Mujeres mobile landing page">
+			</div>
+		</div>
+	</section>
+	<section class="lead">
+		<div class="container">
+			<h2>Secrets Cap Cana - Pre-Opening Campaign</h2>
+			<p><a href="http://www.secretsresorts.com/cap-cana/introducing-secrets-cap-cana" target="_blank">Link&nbsp;›</a></p>
+		</div>
+	</section>
+	<section class="content">
+		<div class="container">
+			<div class="image-wrapper full-width-images">
+				<img class="desktop" src="/assets/images/work/campaign-landing-pages/seccc.png" alt="Secrets Cap Cana landing page">
+				<img class="mobile" src="/assets/images/work/campaign-landing-pages/seccc--mobile.png" alt="Secrets Cap Cana mobile landing page">
+			</div>
+		</div>
+	</section>
+</div>
+		</div>
+		<footer class="footer wrapper">
+	<div class="container">
+		<p>Design + Developed by Dennis Tolan &copy; 2016<br>
+		Powered by <a href="">Jekyll</a></p>
+	</div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+	$( '.toggle' ).on( 'click', function() {
+		$( this ).text(function(i, v){
+			return v === 'close' ? 'menu' : 'close'
+		});
+		$( '.navbar-group-container' ).toggleClass('is-closed').animate({
+			height: 'toggle'
+		});
+	});
+</script>
+	</body>
+</html>

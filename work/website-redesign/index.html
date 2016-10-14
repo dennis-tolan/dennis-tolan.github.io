@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="/assets/css/app.css">
+	<title>Dennis Tolan | Full Stack Designer</title>
+</head>
+
+	<body>
+		<div class="page-wrapper">
+			<nav class="navbar wrapper" role="navigation">
+	<div class="container">
+		<a href="/" class="navbar-brand">Dennis Tolan<span>Full-Stack Designer</span></a>
+		<a class="toggle">Menu</a>
+		<div class="navbar-group-container is-closed">
+			<ul class="navbar-group">
+				<li class="navbar-item"><a href="/about">About</a></li>
+				<li class="navbar-item"><a href="/work/">Work</a></li>
+				<li class="navbar-item"><a href="/contact/">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+			<div class="work-item-wrapper wrapper">
+	<section class="lead">
+		<div class="container">
+			<div class="lead-wrapper">
+				<h3 class="tag">Web Design + Front-End Development</h3>
+				<h1>AMRMI Website Redesign</h1>
+				<p>The AMResorts Meetings & Incentives website redesign was one of the larger project that I took on as Production Designer in my time at AMResorts. I was only given a few constraints to work within but most of the design decisions were left to me.</p>
+				<p>The site had to feel recognizable to older users, keeping the existing architecture intact. I was able to accomplish alot, to start I updated the UI from very image heavy to clean managable code. Parallel to that I aligned the look and feel with the new creative direction of the rest of the segments creative.</p>
+				<p>I had the benefit of being the primary editor of the site on a daily basis and I was able to use that experience to inform my decsions. <a href="http://www.amresorts.com/meetings/" target="_blank">Link&nbsp;›</a></p>
+			</div>
+		</div>
+	</section>
+	<section class="lead">
+		<div class="container">
+			<h2>Home Page</h2>
+			<ul>
+				<li>I kept the navigation familar and placed the RFP submission in a very prominent location</li>
+				<li>I used the jQuery slideshow <a href="http://austenpayan.github.io/skippr/">Skippr</a> as a carousel for the six brands and pulled in some more information to fill out the rest of the home page body. This included creating a Keep In Touch for which would allow us to gather leads into a database and load them into our CRM system</li>
+				<li>I created a more robust and comprehensive footer, pooling the most important links and information, to be displayed on every page</li>
+			</ul>
+		</div>
+	</section>
+	<section class="content">
+		<div class="container">
+			<div class="image-wrapper full-width-images">
+				<img class="half" src="/assets/images/work/website-redesign/home--before.png" alt="">
+				<img class="half" src="/assets/images/work/website-redesign/home--new.png" alt="">
+		</div>
+	</section>
+	<section class="lead">
+		<div class="container">
+			<h2>Brand Level Pages</h2>
+			<ul>
+				<li>I simplified the navigation to only breakdown at a country level and adding headings to indicate regions</li>
+				<li>I also tucked the resort information away into a hover animation to reduce the overwhelming amount of text on the page previously</li>
+			</ul>
+		</div>
+	</section>
+	<section class="content">
+		<div class="container">
+			<div class="image-wrapper full-width-images">
+				<img class="half" src="/assets/images/work/website-redesign/brand--before.png" alt="">
+				<img class="half" src="/assets/images/work/website-redesign/brand--new.png" alt="">
+		</div>
+	</section>
+	<section class="lead">
+		<div class="container">
+			<h2>Resort Level Pages</h2>
+			<ul>
+				<li>My biggest accomplishment on the resort specific pages is the resource center</li>
+				<li>Here we now have an area that can account for the growing number of resources that each resort would like to showcase</li>
+			</ul>
+		</div>
+	</section>
+	<section class="content">
+		<div class="container">
+			<div class="image-wrapper full-width-images">
+				<img class="half" src="/assets/images/work/website-redesign/resort--before.png" alt="">
+				<img class="half" src="/assets/images/work/website-redesign/resort--new.png" alt="">
+		</div>
+	</section>
+	<section class="lead">
+		<div class="container">
+			<h2>Promotions Page</h2>
+			<ul>
+				<li>Here I pulled all of the promotions out carousel which was just not getting the job done</li>
+				<li>With so many promotions we needed categories to break them up, and I was able to incorporate just enough information within each tile to inform but not overwhelm a potential client</li>
+			</ul>
+		</div>
+	</section>
+	<section class="content">
+		<div class="container">
+			<div class="image-wrapper full-width-images">
+				<img class="half" src="/assets/images/work/website-redesign/offers--before.png" alt="">
+				<img class="half" src="/assets/images/work/website-redesign/offers--new.png" alt="">
+		</div>
+	</section>
+	<section class="lead">
+		<div class="container">
+			<p>Side note: I actually lost my original documentation of the old site and use an amazing tool called the <a href="https://archive.org/web/">Wayback Machine</a> to go back in time and grab these screens. Seriously!</p>
+		</div>
+	</section>
+</div>
+		</div>
+		<footer class="footer wrapper">
+	<div class="container">
+		<p>Design + Developed by Dennis Tolan &copy; 2016<br>
+		Powered by <a href="">Jekyll</a></p>
+	</div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+	$( '.toggle' ).on( 'click', function() {
+		$( this ).text(function(i, v){
+			return v === 'close' ? 'menu' : 'close'
+		});
+		$( '.navbar-group-container' ).toggleClass('is-closed').animate({
+			height: 'toggle'
+		});
+	});
+</script>
+	</body>
+</html>
